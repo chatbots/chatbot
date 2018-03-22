@@ -1,5 +1,5 @@
-# chatbot
+# easier chatbot
 
-This is an easier chatbot that implements natural language processing using a plain text file.
+This easier chatbot implements natural language processing using a plain text file.
 
 http://www.aihax.com/easier
