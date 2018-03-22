@@ -10,7 +10,6 @@
 <style>
 div { height:332px;width:532px;overflow:auto;padding:10px; border:1px solid #333333;font-size:16px; }
 input{ font-size:18px; }
-#stimulus:hover{background-image:url('inputBG.gif');}
 </style>
 </head>
 <body bgcolor="#F6F0EF">
