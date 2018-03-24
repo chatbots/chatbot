@@ -27,16 +27,8 @@ function main()
    I = document.getElementById("stimulus").value;
    H = document.getElementById("response").innerHTML;
 
-   In = I.replace(/\bdon[']*t\b/gi, "do not");
-   In = I.replace(/\bwon[']*t\b/gi, "will not");
    In = I.replace(/\bcan[']*t\b/gi, "can not");
-   In = I.replace(/\bhow'd\b/gi, "how did");
-   In = I.replace(/\Bn[']*t\b/gi, " not");
-   In = I.replace(/'d\b/gi, " would");
-   In = I.replace(/'s\b/gi, " is");
-   In = I.replace(/'re\b/gi, " are");
-   In = I.replace(/'ve\b/gi, " have");
-   In = I.replace(/'ll\b/gi, " will");
+   In = I.replace(/\bdon[']*t\b/gi, "do not");
    In = I.replace(/[.?!,;:"]/gi, "");
 
    I = I.replace(/\bf[uU]ck|shi[tT]|bi[tT]ch|bas[tT]ard\b/gi, "%$#");
@@ -48,7 +40,7 @@ function main()
       {
       P=easy[i][0].replace(/\*/gi, "(.*)");
       P=P.replace(/\s+\(\.\*\)$/, "(.*)*");
-      re = new RegExp ("\\b("+P+")\\b", "gi");
+      re = new RegExp ("\\b"+P+"\\b", "gi");
       if(re.test(In))
         {
         len = easy[i].length - 1;
