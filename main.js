@@ -40,7 +40,7 @@ function main()
       {
       P=easy[i][0].replace(/\*/gi, "(.*)");
       P=P.replace(/\s+\(\.\*\)$/, "(.*)*");
-      re = new RegExp ("\\b"+P+"\\b", "gi");
+      re = new RegExp ("\\b(?:"+P+")\\b", "gi");
       if(re.test(In))
         {
         len = easy[i].length - 1;
