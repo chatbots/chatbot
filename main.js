@@ -25,14 +25,14 @@ function main()
    var P="";
 
    I = document.getElementById("stimulus").value;
+   I = I.replace(/\Bf[uU]ck|sh[iI]t|b[iI]tch|b[aA]st[aA]rd\B/gi, "#$%");
+
    H = document.getElementById("response").innerHTML;
 
    In = I.replace(/\bcan[']*t\b/gi, "can not");
-   In = I.replace(/\bdon[']*t\b/gi, "do not");
-   In = I.replace(/[.?!,;:"]/gi, "");
-
-   I = I.replace(/\bf[uU]ck|shi[tT]|bi[tT]ch|bas[tT]ard\b/gi, "%$#");
-   I = I.replace(/\Bf[uU]ck|shi[tT]|bi[tT]ch|bas[tT]ard\B/gi, "#$%");
+   In = In.replace(/\bdon[']*t\b/gi, "do not");
+   In = In.replace(/[.?!,;:"]/gi, "");
+   In = In.replace(/\b(?:(?:c|w|sh)ould|may|might|must|will|shall)\b/gi, "can");
 
    M += "<b>" + I +  '</b><br>\r' + "\n";
 
